@@ -10,7 +10,7 @@ public class Rectangulo {
         this.longitud = longitud;
     }
 
-    public Rectangulo(){
+    public Rectangulo() {
         ancho = 1;
         longitud = 1;
     }
