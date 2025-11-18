@@ -2,7 +2,7 @@ package Cuenta;
 
 import utils.MiEntradaSalida;
 
-public class CuentaAPP {
+public class CuentaApp {
 
     public static void main(String[] args) {
 

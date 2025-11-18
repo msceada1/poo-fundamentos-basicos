@@ -2,7 +2,7 @@ package Maquina_Cafe;
 
 import utils.MiEntradaSalida;
 
-public class MaquinaAPP {
+public class MaquinaApp {
 
     public static void main(String[] args) {
 

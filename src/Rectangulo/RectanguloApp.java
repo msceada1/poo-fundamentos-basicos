@@ -2,7 +2,7 @@ package Rectangulo;
 
 import utils.MiEntradaSalida;
 
-public class RectanguloAPP {
+public class RectanguloApp {
 
     public static void main(String[] args) {
 
