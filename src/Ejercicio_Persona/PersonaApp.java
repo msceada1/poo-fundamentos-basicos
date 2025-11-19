@@ -1,17 +1,14 @@
 package Ejercicio_Persona;
 
+import java.time.LocalDate;
+
 public class PersonaApp {
 
     public static void main(String[] args) {
 
-        Persona p1 = new Persona();
+        Persona p1 = new Persona("Manuel", "28944889", 'H', LocalDate.of(2005, 2, 10), 1.85, 76);
 
-        System.out.println("Nombre: " + p1.getNombre());
-        System.out.println("Fecha de nacimiento: " + p1.getFechaNacimiento());
-        System.out.println("DNI: " + p1.getDNI());
-        System.out.println("Sexo: " + p1.getSexo());
-        System.out.println("Altura: " + p1.getAltura());
-        System.out.println("Peso: " + p1.getPeso());
-        System.out.printf("IMC: %.2f ", p1.calculoIMC());
+        String persona1 = p1.toString();
+        System.out.println(persona1);
     }
 }

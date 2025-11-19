@@ -18,13 +18,13 @@ public class Persona {
     private final LocalDate fechaNacimiento;
 
     //constructor
-    public Persona() {
-        this.nombre = "Manuel";
-        this.DNI = "28644988";
-        this.sexo = 'H';
-        this.altura = 1.85;
-        this.peso = 76;
-        this.fechaNacimiento = LocalDate.of(2005, 2, 10);
+    public Persona(String nombre, String DNI, char sexo, LocalDate fechaNacimiento, double altura, double peso) {
+        this.nombre = nombre;
+        this.DNI = DNI;
+        this.sexo = sexo;
+        this.fechaNacimiento = fechaNacimiento;
+        this.altura = altura;
+        this.peso = peso;
     }
 
     public String getDNI() {
@@ -69,5 +69,17 @@ public class Persona {
         int resto = DNI % 23;
 
         return listaLetrasDNI[resto];
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "nombre='" + nombre + '\'' +
+                ", DNI='" + DNI + '\'' +
+                ", sexo=" + sexo +
+                ", altura=" + altura +
+                ", peso=" + peso +
+                ", fechaNacimiento=" + fechaNacimiento +
+                '}';
     }
 }
