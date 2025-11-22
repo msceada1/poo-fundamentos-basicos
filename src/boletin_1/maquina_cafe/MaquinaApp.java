@@ -1,4 +1,4 @@
-package Maquina_Cafe;
+package maquina_cafe;
 
 import utils.MiEntradaSalida;
 

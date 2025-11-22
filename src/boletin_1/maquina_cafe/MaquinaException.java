@@ -1,4 +1,4 @@
-package Maquina_Cafe;
+package maquina_cafe;
 
 public class MaquinaException extends Exception {
     public MaquinaException(String message) {

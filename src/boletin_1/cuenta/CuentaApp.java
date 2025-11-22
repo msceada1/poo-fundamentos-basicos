@@ -1,4 +1,4 @@
-package Cuenta;
+package cuenta;
 
 import utils.MiEntradaSalida;
 

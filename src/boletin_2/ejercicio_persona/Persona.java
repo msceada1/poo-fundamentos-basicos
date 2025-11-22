@@ -1,4 +1,4 @@
-package Ejercicio_Persona;
+package ejercicio_persona;
 
 import java.time.LocalDate;
 

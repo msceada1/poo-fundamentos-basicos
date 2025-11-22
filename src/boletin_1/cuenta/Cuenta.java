@@ -1,4 +1,4 @@
-package Cuenta;
+package cuenta;
 
 public class Cuenta {
 
