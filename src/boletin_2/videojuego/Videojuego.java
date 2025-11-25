@@ -26,6 +26,10 @@ public class Videojuego {
         this.minMemoriaGPU = minMemoriaGPU;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
     public boolean esCompatible(Ordenador ordenador) {
 
         if (this.numNucleosProcesador > ordenador.getNumNucleosProcesador()) {
