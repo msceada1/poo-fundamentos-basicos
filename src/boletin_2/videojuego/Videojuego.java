@@ -5,9 +5,9 @@ import java.time.LocalDate;
 public class Videojuego {
 
     //atributos
-    private final String nombre;
-    private final String entidadCreadora;
-    private final LocalDate fechaCreacion;
+    private String nombre;
+    private String entidadCreadora;
+    private LocalDate fechaCreacion;
     private int numNucleosProcesador;
     private double minVelCPU;
     private int minEspacioDiscoDuro;
