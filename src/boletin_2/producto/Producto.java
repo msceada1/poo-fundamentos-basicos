@@ -7,7 +7,7 @@ public class Producto {
 
     private String descripcion;
     private double precio;
-    private double codigo;
+    private int codigo;
 
     public Producto(String descripcion, double precio) {
         this.descripcion = descripcion;
@@ -32,7 +32,6 @@ public class Producto {
     }
 
     private double precioConIva() {
-
         return this.precio * (1 + iva);
     }
 

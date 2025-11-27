@@ -6,15 +6,15 @@ public class ProductoApp {
 
         Producto pizza = new Producto("pizza 4 quesos", 3.4);
         System.out.println(pizza);
-        System.out.println(calcularPrecioConIva(pizza));
+        System.out.printf("el precio con IVA incluido es %.2f", calcularPrecioConIva(pizza));
 
         Producto pepinillos = new Producto("pepinillos de tarro", 12.09);
-        System.out.println(pepinillos);
-        System.out.println(calcularPrecioConIva(pepinillos));
+        System.out.println("\n" + pepinillos);
+        System.out.printf("el precio con IVA incluido es %.2f", calcularPrecioConIva(pepinillos));
 
         Producto ketchup = new Producto("ketchup 0 azúcares", 6.12);
-        System.out.println(ketchup);
-        System.out.println(calcularPrecioConIva(ketchup));
+        System.out.println("\n" + ketchup);
+        System.out.printf("precio con IVA incluido %.2f ", calcularPrecioConIva(ketchup));
     }
 
     private static double calcularPrecioConIva(Producto producto) {
