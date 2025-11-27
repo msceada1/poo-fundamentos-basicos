@@ -28,8 +28,9 @@ public class Punto {
 
     /**
      * Metodo que desplaza el eje x a la derecha
+     *
      * @param nuevaPosEjeX el desplazamiento que desea hacer el usuario
-     * @throws LineaException
+     * @throws LineaException si la nueva posicion es igual o menor que la que ya tiene
      */
     public void moverDerecha(double nuevaPosEjeX) throws LineaException {
 
@@ -40,6 +41,12 @@ public class Punto {
         this.posEjeX = nuevaPosEjeX;
     }
 
+    /**
+     * Metodo que desplaza el eje x a la izquierda
+     *
+     * @param nuevaPosEjeX el desplazamiento que desea hacer el usuario
+     * @throws LineaException si la nueva posicion es igual o mayor que la que ya tiene
+     */
     public void moverIzquierda(double nuevaPosEjeX) throws LineaException {
 
         if (nuevaPosEjeX >= this.posEjeX) {
@@ -49,6 +56,12 @@ public class Punto {
         this.posEjeX = nuevaPosEjeX;
     }
 
+    /**
+     * Metodo que desplaza el eje y a la derecha
+     *
+     * @param nuevaPosEjeY el desplazamiento que desea hacer el usuario
+     * @throws LineaException si la nueva posicion es igual o menor a la que ya tiene
+     */
     public void moverArriba(double nuevaPosEjeY) throws LineaException {
 
         if (nuevaPosEjeY <= this.posEjeY) {
@@ -58,6 +71,12 @@ public class Punto {
         this.posEjeY = nuevaPosEjeY;
     }
 
+    /**
+     * metodo que desplaza el eje y a la izquierda
+     *
+     * @param nuevaPosEjeY el desplazamiento que desea hacer el usuario
+     * @throws LineaException si la nueva posicion es igual o mayor a la que ya tiene
+     */
     public void moverAbajo(double nuevaPosEjeY) throws LineaException {
 
         if (nuevaPosEjeY >= this.posEjeY) {

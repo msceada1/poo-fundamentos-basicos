@@ -10,16 +10,8 @@ public class Linea {
         this.puntoB = puntoB;
     }
 
-    public Punto getPuntoA() {
-        return puntoA;
-    }
-
     public void setPuntoA(Punto puntoA) {
         this.puntoA = puntoA;
-    }
-
-    public Punto getPuntoB() {
-        return puntoB;
     }
 
     public void setPuntoB(Punto puntoB) {
