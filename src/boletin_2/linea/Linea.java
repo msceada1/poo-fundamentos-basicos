@@ -10,15 +10,27 @@ public class Linea {
         this.puntoB = puntoB;
     }
 
-    /**
-     * Metodo que recibe dos objetos de tipo Punto y comprueba si son iguales
-     *
-     * @param puntoA el primer punto con el que s trabaja
-     * @param puntoB el segundo punto con el que se trabaja
-     * @return {@code true} si tienen el mismo valor, {@code false} en caso contrario
-     */
-    public boolean mismaLinea(Punto puntoA, Punto puntoB) {
-        return puntoA.equals(puntoB);
+    public Punto getPuntoA() {
+        return puntoA;
     }
 
+    public void setPuntoA(Punto puntoA) {
+        this.puntoA = puntoA;
+    }
+
+    public Punto getPuntoB() {
+        return puntoB;
+    }
+
+    public void setPuntoB(Punto puntoB) {
+        this.puntoB = puntoB;
+    }
+
+    @Override
+    public String toString() {
+        return "Linea{" +
+                "puntoA=" + (puntoA.getPosEjeX() + "," + puntoA.getPosEjeY()) +
+                ", puntoB=" + (puntoB.getPosEjeX() + "," + puntoB.getPosEjeY()) +
+                '}';
+    }
 }
