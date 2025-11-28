@@ -8,13 +8,19 @@ public class Jarra {
     private double aguaConsumida = 0;
 
     private double aguaContenidaEnJarra;
+    private final int limiteDeJarra;
 
-    public Jarra() {
+    public Jarra(int limiteDeJarra) {
         this.aguaContenidaEnJarra = 0;
+        this.limiteDeJarra = limiteDeJarra;
     }
 
     public double getAguaContenidaEnJarra() {
         return aguaContenidaEnJarra;
+    }
+
+    public int getLimiteDeJarra() {
+        return limiteDeJarra;
     }
 
     public void setAguaContenidaEnJarra(double aguaContenidaEnJarra) {
@@ -28,5 +34,16 @@ public class Jarra {
         }
 
         setAguaContenidaEnJarra(cantidadALlenar + this.aguaContenidaEnJarra);
+    }
+
+    public void llenarJarraEnOtra(Jarra jarra1, Jarra jarra2, double cantidadAVolcar) throws JarraException {
+
+        if (jarra1.getAguaContenidaEnJarra() == this.limiteDeJarra && jarra2.getAguaContenidaEnJarra() == this.limiteDeJarra) {
+            throw new JarraException("ERROR: Las jarras estan en el limite");
+        }
+
+        if (cantidadAVolcar > jarra1.aguaContenidaEnJarra) {
+            throw new JarraException("ERROR: La cantidad a volcar es mayor que la capacidad de la jarra");
+        }
     }
 }
