@@ -1,20 +1,23 @@
 package boletin_3.cartas;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class Baraja {
 
-    private String[] baraja;
-
-    Carta carta = new Carta();
+    private Carta[] baraja;
 
     public Baraja() {
-        this.baraja = new String[40];
+        this.baraja = new Carta[40];
     }
 
+
     private void llenarBaraja() {
-        for (int i = 0; i < baraja.length; i++) {
-            this.baraja[i] = carta.cartaCompleta();
+        int contadorCartas = 0;
+        for (String palo : Carta.PALOS) {
+            for (int i = 0; i < 10; i++) {
+                baraja[contadorCartas++] = new Carta(palo, i + 1);
+            }
         }
     }
 
@@ -23,5 +26,8 @@ public class Baraja {
         System.out.println(Arrays.toString(this.baraja));
     }
 
+    public void barajar() {
+        Random random = new Random();
+    }
 
 }
