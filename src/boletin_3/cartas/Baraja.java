@@ -28,6 +28,12 @@ public class Baraja {
 
     public void barajar() {
         Random random = new Random();
+        for (int i = 0; i < baraja.length; i++) {
+            int cartaBarajada = random.nextInt(i + 1);
+            Carta cartaNueva = baraja[i];
+            baraja[i] = baraja[cartaBarajada];
+            baraja[cartaBarajada] = cartaNueva;
+        }
     }
 
 }
