@@ -9,6 +9,11 @@ public class Principal {
         String cuerpo = "Mañana a las diez en el casino para unos dardos y un futbolin";
 
         generarMensaje(asunto, cuerpo, remitente, destinatario);
+        generarMensaje(asunto, cuerpo, remitente, destinatario);
+        generarMensaje(asunto, cuerpo, remitente, destinatario);
+        generarMensaje(asunto, cuerpo, remitente, destinatario);
+        generarMensaje(asunto, cuerpo, remitente, destinatario);
+        generarMensaje(asunto, cuerpo, remitente, destinatario);
     }
 
     private static void generarMensaje(String asunto, String cuerpo, Persona remitente, Persona destinatario) {
