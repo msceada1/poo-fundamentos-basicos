@@ -26,42 +26,43 @@ public class Biblioteca {
     }
 
     private boolean haLlegadoAlLimite() {
-        if (peliculas[peliculas.length - 1] != null) {
-            return true;
-        }
-        return false;
+        return peliculas[peliculas.length - 1] != null;
     }
 
     public void consultarBiblioteca() {
-        for (int i = 0; i < peliculas.length; i++) {
-            if (peliculas[i] != null) {
-                System.out.println(peliculas[i]);
-            } else {
-                break;
+        for (Pelicula pelicula : peliculas) {
+            if (pelicula != null) {
+                System.out.println(pelicula);
             }
         }
     }
 
     public void buscarPeliculasPorEtiqueta(String etiqueta) {
-        for (int i = 0; i < peliculas.length; i++) {
-            if (peliculas[i].getEtiquetas().equalsIgnoreCase(etiqueta)) {
-                System.out.println(peliculas[i]);
+        for (Pelicula pelicula : peliculas) {
+            if (pelicula != null) {
+                if (pelicula.getEtiquetas().equalsIgnoreCase(etiqueta)) {
+                    System.out.println(pelicula);
+                }
             }
         }
     }
 
     public void buscarPeliculaPorTitulo(String titulo) {
-        for (int i = 0; i < peliculas.length; i++) {
-            if (peliculas[i].getTitulo().equalsIgnoreCase(titulo)) {
-                System.out.println(peliculas[i]);
+        for (Pelicula pelicula : peliculas) {
+            if (pelicula != null) {
+                if (pelicula.getTitulo().equalsIgnoreCase(titulo)) {
+                    System.out.println(pelicula);
+                }
             }
         }
     }
 
     public void buscarPeliculasConPresupuestoMaximo(double presupuesto) {
-        for (int i = 0; i < peliculas.length; i++) {
-            if (peliculas[i].getPresupuesto() <= presupuesto) {
-                System.out.println(peliculas[i]);
+        for (Pelicula pelicula : peliculas) {
+            if (pelicula != null) {
+                if (pelicula.getPresupuesto() >= presupuesto) {
+                    System.out.println(pelicula);
+                }
             }
         }
     }

@@ -21,7 +21,7 @@ public class Pelicula {
         this.presupuesto = presupuesto;
         this.sipnosis = sipnosis;
         this.etiquetas = etiquetas;
-        this.valoracion = Double.parseDouble(null);
+        this.valoracion = 0;
     }
 
 
