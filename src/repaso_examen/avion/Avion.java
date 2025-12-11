@@ -73,6 +73,10 @@ public class Avion {
         setRegistros(nuevoRegistroTotal);
     }
 
+    public void hacerViaje(LocalDate fechaDeViaje, int combustibleRequerido) throws AvionException {
+        avionCualificado(fechaDeViaje);
+    }
+
     @Override
     public String toString() {
         return "Avion{" +
